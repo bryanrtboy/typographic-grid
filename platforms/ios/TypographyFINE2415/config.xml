@@ -21,6 +21,10 @@
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <name>TypographyFINE2415</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -51,4 +55,5 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
 </widget>
