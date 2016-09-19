@@ -7,17 +7,17 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-console": {
             "PACKAGE_NAME": "com.bryanleister.typographicgrid"
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.bryanleister.typographicgrid"
         },
-        "cordova-plugin-console": {
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.bryanleister.typographicgrid"
         },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.bryanleister.typographicgrid"
         }
     },
     "dependent_plugins": {}

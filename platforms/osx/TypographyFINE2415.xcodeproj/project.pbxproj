@@ -16,7 +16,7 @@
 		70BD686718FFB06500A1EFCF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BD686518FFB06500A1EFCF /* WebKit.framework */; };
 		70BD686D18FFB0BF00A1EFCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BD686A18FFB0BF00A1EFCF /* AppDelegate.m */; };
 		70BD686E18FFB0BF00A1EFCF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BD686C18FFB0BF00A1EFCF /* MainViewController.m */; };
-		62F17E757A2A424B880397BE /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B35561847492AA7BE5E52 /* CDVDevice.m */; };
+		FF2D9C937BF54E69B39983FB /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DC758B7F5AF54DE89CD62E18 /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +77,8 @@
 		70BD686B18FFB0BF00A1EFCF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		70BD686C18FFB0BF00A1EFCF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		70DAA8D91908785C00AF3749 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
-		FC1B35561847492AA7BE5E52 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		0C936904A0804E5AB077A232 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DC758B7F5AF54DE89CD62E18 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8827BBE39B2D42D1A9C937F3 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		7069FBC31905A1F9000B48E1 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				FC1B35561847492AA7BE5E52 /* CDVDevice.m */,
-				0C936904A0804E5AB077A232 /* CDVDevice.h */,
+				DC758B7F5AF54DE89CD62E18 /* CDVDevice.m */,
+				8827BBE39B2D42D1A9C937F3 /* CDVDevice.h */,
 			);
 			name = Plugins;
 			path = "TypographyFINE2415/Plugins";
@@ -311,7 +311,7 @@
 				70BD683318FFB02D00A1EFCF /* main.m in Sources */,
 				70BD686D18FFB0BF00A1EFCF /* AppDelegate.m in Sources */,
 				70BD686E18FFB0BF00A1EFCF /* MainViewController.m in Sources */,
-				62F17E757A2A424B880397BE /* CDVDevice.m in Sources */,
+				FF2D9C937BF54E69B39983FB /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +378,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
-				PRODUCT_NAME = "TypographyFINE2415";
 			};
 			name = Debug;
 		};
@@ -417,7 +416,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
-				PRODUCT_NAME = "TypographyFINE2415";
 			};
 			name = Release;
 		};
@@ -430,7 +428,7 @@
 				GCC_PREFIX_HEADER = "TypographyFINE2415/TypographyFINE2415-Prefix.pch";
 				INFOPLIST_FILE = "TypographyFINE2415/TypographyFINE2415-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "TypographyFINE2415";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -444,7 +442,7 @@
 				GCC_PREFIX_HEADER = "TypographyFINE2415/TypographyFINE2415-Prefix.pch";
 				INFOPLIST_FILE = "TypographyFINE2415/TypographyFINE2415-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "TypographyFINE2415";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
