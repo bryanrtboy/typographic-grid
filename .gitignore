@@ -14,3 +14,7 @@ adhoc/
 build/
 
 xcuserdata
+
+*.xcuserstate
+
+platforms/ios/TypographyFINE2415.xcodeproj/project.xcworkspace/xcuserdata/bryan.xcuserdatad/UserInterfaceState.xcuserstate
