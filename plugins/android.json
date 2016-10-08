@@ -18,7 +18,14 @@
         },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.bryanleister.typographicgrid"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.bryanleister.typographicgrid"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.bryanleister.typographicgrid"
+        }
+    }
 }
