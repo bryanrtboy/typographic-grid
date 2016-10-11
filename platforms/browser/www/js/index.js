@@ -62,7 +62,7 @@ var app = {
     },
     onDeviceReady: function() {
 
-        var count = 24;
+        var count = 16;
         var images = new Array();
 
         var ul = document.getElementById('image_list');
@@ -74,13 +74,12 @@ var app = {
           img.src = "projects/www_" + i + "/img/1/art.png";
           img.width = "76";
           img.height = "102";
-          img.id = "www_" + i;
           var limg = ul.appendChild(li);
           limg.appendChild(img);
           img.id = "www_" + i;
           img.addEventListener('click', function (e)
           {
-            cordova.InAppBrowser.open('projects/' + this.id + '/index.html', '_blank', 'location=yes');
+            cordova.InAppBrowser.open('projects/' + this.id + '/index.html', '_blank', 'location=no');
           });
         }
     }

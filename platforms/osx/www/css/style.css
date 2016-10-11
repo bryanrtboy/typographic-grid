@@ -11,6 +11,18 @@ html {
     background-color: #000000;
     color:#FFFFFF;
 }
+
+/**********/
+/* Image List*/
+/**********/
+ul#image_list {
+  margin: 3em auto;
+}
+
+#image_list li {
+  display:inline-block;
+  padding: 1em;
+}
   /**********/
  /* Slider */
 /**********/
@@ -135,4 +147,28 @@ NOTE: if you use the selector .slider:hover for each of the li items below*/
 .slider li:nth-child(1) img{
   visibility: visible;
   opacity: 1;
+}
+
+.inAppBrowserWrap {
+  background-color: rgba(0,0,0,0.75);
+  color: rgba(235,235,235,1.0);
+}
+.inAppBrowserWrap menu {
+  overflow: auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+.inAppBrowserWrap menu li {
+  font-size: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 10px;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  background: rgba(30,30,30,0.50);
+}
+.inAppBrowserWrap menu li.disabled {
+    color: #777;
 }
