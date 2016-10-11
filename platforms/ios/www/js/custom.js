@@ -1,3 +1,7 @@
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    window.open = cordova.InAppBrowser.open;
+}
 
 document.getElementById("myBtn").addEventListener("click", takePicture);
 

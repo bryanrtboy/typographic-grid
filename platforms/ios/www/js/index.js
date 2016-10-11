@@ -58,8 +58,39 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        //document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    onDeviceReady: function() {
+
+        var count = 5;
+        var images = new Array();
+
+        var ul = document.getElementById('image_list');
+
+        for(i=0; i < count; i++)
+        {
+          var img =  document.createElement("IMG");
+          var li = document.createElement("LI");
+          img.src = "projects/www_" + i + "/img/1/art.png";
+          img.width = "76";
+          img.height = "102";
+          img.id = "www_" + i;
+          var limg = ul.appendChild(li);
+          limg.appendChild(img);
+          img.id = "www_" + i;
+          img.addEventListener('click', function (e)
+          {
+            cordova.InAppBrowser.open('projects/' + this.id + '/index.html', '_blank', 'location=yes');
+          });
+        }
     }
+
 };
+
+
+
+
+
+
 
 app.initialize();

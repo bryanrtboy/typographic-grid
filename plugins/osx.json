@@ -19,13 +19,9 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.bryanleister.typographicgrid"
         },
-        "cordova-plugin-camera": {
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.bryanleister.typographicgrid"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.bryanleister.typographicgrid"
-        }
-    }
+    "dependent_plugins": {}
 }

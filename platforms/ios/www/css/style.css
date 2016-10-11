@@ -11,6 +11,18 @@ html {
     background-color: #000000;
     color:#FFFFFF;
 }
+
+/**********/
+/* Image List*/
+/**********/
+ul#image_list {
+  margin: 3em auto;
+}
+
+#image_list li {
+  display:inline-block;
+  padding: 1em;
+}
   /**********/
  /* Slider */
 /**********/
