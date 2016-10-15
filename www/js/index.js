@@ -62,7 +62,7 @@ var app = {
     },
     onDeviceReady: function() {
 
-        var count = 16;
+        var count = 17;
         var images = new Array();
 
         var ul = document.getElementById('image_list');
@@ -79,17 +79,13 @@ var app = {
           img.id = "www_" + i;
           img.addEventListener('click', function (e)
           {
-            cordova.InAppBrowser.open('projects/' + this.id + '/index.html', '_blank', 'location=no');
+            var ref = cordova.InAppBrowser.open('projects/' + this.id + '/index.html', '_blank', 'location=no');
+            // ref.insertCSS({ code: "button{border-radius:0px !important;" });
           });
         }
     }
 
 };
-
-
-
-
-
 
 
 app.initialize();

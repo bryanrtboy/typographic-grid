@@ -172,3 +172,11 @@ NOTE: if you use the selector .slider:hover for each of the li items below*/
 .inAppBrowserWrap menu li.disabled {
     color: #777;
 }
+
+button {
+  border-radius: 0px !important;
+}
+
+div {
+  border-style: none !important;
+}
